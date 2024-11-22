@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+}
+
+@layer styles {
+  body::-webkit-scrollbar {
+    /* width: 10px; */
+    display: none;
+  }
+
+  /** Profiles  */
+
+  .background-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 50% 50%;
+  }
+
+  .profile-image {
+    position: absolute;
+    object-fit: cover;
+    /* background-position: 20% 50%; */
+  }
+
+  @layer texts {
+    .media-q-text {
+      @apply text-lg se:text-lg xr:text-lg xs:text-lg ss:text-lg sm:text-lg mm:text-lg md:text-lg lg:text-lg xl:text-lg font-semibold;
+    }
+
+    .media-q-text-sm {
+      @apply text-sm se:text-lg xr:text-lg xs:text-[1rem] ss:text-sm sm:text-lg mm:text-lg md:text-lg lg:text-lg xl:text-3xl font-semibold;
+    }
+
+    .med-q-grid {
+      @apply grid se:grid-cols-2 xr:grid-cols-2 xs:grid-cols-2 cs:grid-cols-3 ss:grid-cols-2 sm:grid-cols-2 mm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4;
+    }
+  }
+
+  .bg-topp {
+    background: url("/images/Black.jpg");
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .selected {
+    background-color: aqua;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* Login Background */
+  .loginbg {
+    background-image: url(public/images/loginbg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+
+  .signupbg {
+    background-image: url(public/images/signupbg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Horizontal Line  */
+
+  @layer footerOne {
+    .footer {
+      @apply min-w-full bg-orange-500;
+    }
+
+    .li > span {
+      @apply hover:text-black 
+					hover:underline
+					transition-all;
+    }
+
+    @media screen and (max-width: 620px) {
+      .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media screen and (max-width: 890px) {
+      .blog_write {
+        display: flex;
+        flex-direction: column;
+        /* height: none; */
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+export { default as dynamic } from './dynamic.jpeg';
+export { default as jordans } from './jordans.jpeg';
+export { default as lighthouse } from './lighthouse.jpeg';
+export { default as park } from './park.jpeg';
+export { default as tiger } from './tiger.jpeg';
+export { default as xbox } from './xbox.jpg';
+export { default as churchfront } from './churchfront.jpeg';
+export { default as Black } from './Black.jpg';
+export { default as OurBg } from './OurBg.jpeg';
+export { default as shaun } from './shaun.jpeg';
+export { default as schsymbol } from './schsymbol.jpg';
